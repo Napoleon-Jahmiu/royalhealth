@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<hea
+d>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REGISTER</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #ccc;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-wrap {
+    width: 400px;
+    background: white;
+    margin: auto;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.form-wrap h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form-group label{
+    margin-top: .5rem;
+}
+
+.form-group input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid ;
+    border-radius: 5px;
+    outline-color: palevioletred;
+    margin-bottom: 1.3rem;
+}
+
+.is-required:after{
+    content: '*';
+    padding-left: .3rem;
+    color: red;
+}
+
+.send {
+    padding: .5rem .3rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.send:hover {
+    font-size: 1rem;
+    background: rgba(41, 128, 185, 0.5)
+}
+
+.terms {
+    text-align: center;
+}
+
+.radio {
+    align-items: center;
+    margin: auto;
+    /* transform: translateX(100px); */
+    margin-bottom: 2rem;
+}
+
+.footer {
+    color: #333;
+    background: #fff;
+    padding: .5rem;
+    overflow: hidden;
+    text-align: center;
+}
+</style>
+
+</head>
+
+
+<body>
+    <form action="GET">
+        <div class="form-wrap">
+            <h2>Register For This Class</h2>
+            <div class="form-group">
+                <label class="is-requierd" for="Name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Full Name">
+            </div>
+
+            <div class="form-group">
+                <label class="is-required" for="Name">Email</label class="is-required">
+                <input type="email" name="email" id="email" placeholder="Enter Your E-mail">
+            </div>
+
+            <div class="form-group">
+                <label class="is-required" for="Name">Phone Number</label>
+                <input type="number" name="number" id="number" placeholder="Enter Your Phone Number">
+            </div>
+
+            <div class="form-group">
+                <label class="is-required" for="Name">Profession</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Profession">
+            </div>
+
+            <div class="form-group">
+                <label for="message">What is your End Goal?</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave Message"></textarea>
+            </div>
+            <button class="send"> SUBMIT</button>
+        </div>
+    </form>
+
+    <p class="terms">By clicking, you have agreed to our <a href="#">Terms & COnditions</a> 
+        <br>
+        and also our <a href="#Privacy">Policies & Privacy</a> </p>. 
+
+    <div class="radio">
+    <input type="radio" name="" id="radio"> I Agree.
+    <input type="radio" name="" id="radio"> I Do Not Agree
+    </div>
+    
+    <footer class="footer">
+        <p>Copyright &copy; D'Fleex 2019. All Rights Reserved. </p>
+    </footer>
+</body>
+</html>

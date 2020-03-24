@@ -1,0 +1,254 @@
+@media (min-width: 1000px) and (max-width:1100px) {
+    #showcase .showcase-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+
+
+/* ........................... */
+
+#navbar .logo {
+    padding: 1.6rem;
+}
+
+#navbar .social .fa-youtube, 
+#navbar .social .fa-instagram{
+    display: none;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    align-content: center;
+    margin: auto;
+    padding: 3rem;
+}
+
+.testimonials > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto .5fr auto;
+
+}
+
+.testimonias > div {
+    width: 100%;
+    transform: none;
+    display: grid;
+    grid-template-columns: auto .5fr auto;
+}
+
+.testimonials .box {
+    margin-top: 3rem;
+    height: 300px;
+}
+
+.testimonias .box {
+    margin-top: 3rem;
+    height: 300px;
+}
+
+.testimonials .test-speech {
+    margin-top: -1rem;
+}
+
+.testimonias .test-speech {
+    margin-top: -1rem;
+}
+
+.testimonials .test-speech h3 {
+    padding-bottom: -1rem;
+    margin-top: 1rem;
+    margin-bottom: -1.2rem;
+}
+
+.testimonias .test-speech h3 {
+    padding-bottom: -1rem;
+    margin-top: 1rem;
+    margin-bottom: -1.2rem;
+    transform: translateX(160px);
+}
+
+.testimonials img {
+    width: 350px;
+}
+
+.testimonias img {
+    width: 350px
+}
+
+
+/* for  screen sizes less than 500px*/
+
+@media (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    div.logo {
+        padding: -2rem;
+    }
+
+    #navbar .social {
+        display: none;
+        padding: -2rem;
+    }
+    
+    .socials {
+        display: flex;
+    }
+    
+    /* #navbar ul{
+        padding: -1rem;
+    } */
+
+
+    /* Showcase Section */
+    #showcase {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center/justify;
+    }
+
+    #showcase h1 {
+        padding-top: 4rem;
+        font-size: 1.3rem;
+    }
+
+    /* The welcome section */
+    #welcome {
+        height: 100%;
+    }
+
+    #welcome .welcome-training{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #welcome .training-content {
+        width: 100%;
+    }
+
+    .training-img {
+        background: url('../img/about.jpg')no-repeat center center/cover;
+        padding: 0 2.5rem;
+        height: 200px;
+        padding: 2rem;
+        margin-bottom: .5rem;
+        width: 100%;
+    }
+
+    /* What You will learn section */
+    #learn h1 {
+        font-size: 1.1rem;
+    }
+
+
+    #learn .items {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        font-size: .8rem;
+    }
+
+    /* The Testimonial Section */
+    #testimonial {
+        padding: 1.3rem;
+    }
+
+    .testimonials > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: auto;
+        border-bottom: #fff dashed 2px;
+    }
+
+    .testimonias > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: auto;
+        border-bottom: #fff dashed 2px;
+    }
+    
+    .testimonials .box {
+        display: none;
+    }
+
+    .testimonias .box {
+        display: none;
+    }
+
+    .testimonials img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .testimonias img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .testimonials .test-speech {
+        margin: auto;
+        text-align: center/justify;
+    }
+
+    .testimonias .test-speech {
+        margin: auto;
+        text-align: center/justify;
+    }
+
+    .testimonials .test-speech h3 {
+        text-align: center;
+        transform: none;
+    }
+
+    .testimonias .test-speech h3 {
+        text-align: center;
+        transform: none;
+    }
+}
+
+@media (max-width:320px) {
+    #navbar {
+        display: flex;
+    }   
+
+    #navbar ul {
+        margin-top: -3rem;
+    }
+
+    #showcase {
+        height: 100vh;
+        display: inherit;
+        width: 100%;
+    }
+
+    #showcase .showcase-content{
+        padding-top: 7rem;
+    }
+
+    #showcase .showcase-container h1 {
+        letter-spacing: 0.7;
+        display: block;
+        text-align: center;
+    }
+
+    .footer {
+        font-size: .9rem;
+    }
+}
+
