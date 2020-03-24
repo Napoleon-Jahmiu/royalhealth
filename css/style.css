@@ -90,6 +90,9 @@ a {
     text-align: center;
 }
 
+.liste {
+    list-style: none;
+}
 /* navbar section */
 #navbar {
     background: #93cb52;
@@ -289,6 +292,15 @@ a {
 #learn .items ul li{
     list-style: none;
 }
+
+#advocate ul {
+    text-align: justify;
+}
+
+#advocate ul li {
+    margin-bottom: 1rem;
+}
+
 
 /* Testimonial section */
 
