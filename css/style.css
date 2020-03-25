@@ -73,6 +73,7 @@ a {
     color: #fff;
     font-weight: bold;
     align-content: center;
+    transition: 2s ease ;
     /* display: inline-block ;
     color: #333;
     border: #333 2px solid;
@@ -178,8 +179,7 @@ a {
 }
 
 .socials .fa-facebook, .fa-twitter {color: blue;}
-.socials .fa-instagram  {color: palevioletred;}
-.socials .fa-youtube  {color: red;}
+.social .fa-whatsapp { color: #fff;}
 
 
 .socials {
@@ -255,13 +255,28 @@ a {
     align-content: center;
 }
 
-.training-img {
-    background: url('../img/about.jpg')no-repeat center center/cover;
-    padding: 0 3rem;
-    height: inherit;
-    margin-bottom: 2rem;
-    width: 50%;
+.training-content .button {
+    margin-bottom: 1rem;
 }
+
+.welcome-training .thebook {
+    padding: 1rem 0;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+}
+
+.fa-hand-point-right {
+    /* color: #fff; */
+}
+
+.training-img {
+    background: url('../img/medical.jpg')no-repeat center center/cover;
+    padding: 2rem 3rem;
+    min-height: 600px;
+    margin: 2rem;
+    width: 400px;
+}
+
 
 /* The what you will learn section */
 
@@ -282,6 +297,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: ;
     padding-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
