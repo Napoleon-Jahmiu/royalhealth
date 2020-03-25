@@ -278,10 +278,11 @@ a {
 }
 
 #learn .items {
+
     display: flex;
-    /* flex-direction: repeat(3, auto); */
+    flex-wrap: wrap;
+    flex-direction: row;
     padding-bottom: 1rem;
-    grid-gap: 1rem;
     justify-content: space-between;
     align-items: center;
     /* color: #333;
@@ -291,6 +292,10 @@ a {
 
 #learn .items ul li{
     list-style: none;
+}
+
+#learn .item {
+    margin-bottom: 1rem;
 }
 
 #advocate ul {
