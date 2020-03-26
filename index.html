@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="font/css/all.css">
     <link rel="stylesheet" href="font/css/all.min.css">
     <link rel="stylesheet" href="font/css/fontawesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Royal Health</title>
 </head>
 <body>
     <nav>
         <div id="navbar">
         <!-- <div class="navbar-content"> -->
-            <div class="logo"><i class="fas fa-handshake fa-2x">  </i>  <h1>D'Fleex</h1></div>
+            <div class="logo"> <img src="./img/aloe vera.jpg" alt=""> <h1>STAY+SAFE</h1></div>
 
             <div class="social">
                 <a href=""><i class="fab fa-facebook fa-2x"></i></a>
@@ -52,7 +53,7 @@
 
                 <!-- <a class="btn" href="form.html">REGISTER</a> -->
                 <div id="butt">
-                <button class="button"><a href="f.html">GET THE BOOK</a></button>
+                <button class="button" onclick="payWithPaystack()">GET THE BOOK</button>
                 <button class="button"><a href="f.html">LEARN MORE</a></button>
                 </div>
             </div>
@@ -70,7 +71,7 @@
 
                     <li>The natural ways described in the book are proven to be effective over the years.</li>
 
-                    <li>he ingredients for preparation are cheap, easily accessible and available locally.</li>
+                    <li>The ingredients for preparation are cheap, easily accessible and available locally.</li>
 
                     <li>You will possess natural ways to cure any ailment for life and can even pass the book on to your born and unborn children</li>
 
@@ -87,7 +88,7 @@
                         <h1>Who Is The Book For?</h1>
                         <p>This book is for anybody either male or female, man or woman, boy or girl, old or young, black or white that care about staying healthy.</p>
                     </div>
-                    <button class="button"><a href="f.html">GET THE BOOK NOW</a></button>
+                    <button class="button" onclick="payWithPaystack()">GET THE BOOK</button>
                     
                  </div>
                  
@@ -210,7 +211,7 @@
 
 
     <section id="testimonial" class="p-1">
-        <h2 class="m-heading m-center">Facilitators</h2>
+        <h2 class="m-heading m-center">Testimonials</h2>
         <ul>
             <li class="testimonials ">
                 <div>
@@ -379,7 +380,8 @@
     
         </div>
         </div>
-    
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://js.paystack.co/v1/inline.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
