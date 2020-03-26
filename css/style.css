@@ -338,92 +338,41 @@ a {
 /* Testimonial section */
 
 #testimonial {
-    padding: 2rem;
     margin: auto;
     overflow: auto;
     background: #fff;
 }
 
-#testimonial li {
-    list-style: none;
-}
-
-.testimonials > div{
+.testimonial {
     display: grid;
-    grid-template-columns: auto .5fr auto;
-    width: 70vw;
-    grid-gap: 1rem;
-    padding: 1.5rem;
-    list-style: none;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2rem;
+    padding: 1rem 2rem;
 }
 
-/* testimonial for even numbers */
-.testimonias > div{
-   display: grid;
-   justify-self: flex-end;
-   grid-template-columns: auto .5fr auto;
-   grid-gap: 1rem;
-   width: 70vw;
-   padding: 1.5rem;
-   /* margin-bottom: 2rem; */
-   transform: translateX(310px);
-}
-
-
-/* This is the line at the between the image and the text */
-.testimonials .box {
-    width: 3px;
-    margin-top: 5rem;
-    height:250px;
-    background: #333;
-    transform: translateX(10px);
-    color: black;
-    /* transform: translateX(-50px); */
-}
-
-.testimonias .box {
-    width: 3px;    
-    margin-top: 5rem;
-    height: 250px;
-    background: #333;
-    transform: translateX(-20px);
-}
-.testimonials .test-speech {
-    margin-left: 2rem;
-    margin-top: 2rem;
-    font-size: 14px;
-    text-align: justify;
-}
-
-.testimonias .test-speech {
-    margin-right: 2rem;
-    margin-top: 2rem;
-    text-align: justify;
-    font-size: 14px;
-}
-
-.testimonials .test-speech h3 {
-    transform: translateX(-50px);
-    padding-bottom: 2rem;
-}
-
-.testimonias .test-speech h3 {
-    transform: translateX(310px);
-    padding-bottom: 2rem;
+.testimonials {
+    background: var(--colorfour);
+    padding: .5rem
 }
 
 .testimonials img {
-    display: block;
-    height: 400px;
-    width: 400px;
+    /* display: block; */
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 1rem;
 }
 
-.testimonias img {
-    display: block;
-    height: 400px;
-    width: 400px;
+.testimonials .test-speech {
+    padding-top: .5rem;
 }
+
+/* .testimonials .test-speech {
+    float: right;
     
+} */
+
 /* thank you successful registration page */
 .thanks {
     display: flex;
