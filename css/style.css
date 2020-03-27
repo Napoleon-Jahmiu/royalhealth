@@ -368,8 +368,11 @@ a {
     padding-top: .5rem;
 }
 
-.payment {
-
+#payment {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2rem;
+    
 }
 /* .testimonials .test-speech {
     float: right;
