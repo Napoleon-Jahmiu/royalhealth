@@ -54,7 +54,7 @@
                 <!-- <a class="btn" href="form.html">REGISTER</a> -->
                 <div id="butt">
              <button class="button"> <a href="#payment">GET THE BOOK</a></button>
-                <button class="button"><a href="#advocate">LEARN MORE</a></button>
+                <button class="button"><a href="#welcome">LEARN MORE</a></button>
                 </div>
             </div>
         
@@ -127,7 +127,7 @@
                 <li> <i class="fas fa-atom"></i> Quick Ejaculation</li>
                 <li> <i class="fas fa-atom"></i> Weak Erection</li>
                 <li> <i class="fas fa-atom"></i> Uterus Inflammation</li>
-                <li> <i class="fas fa-atom"></i> Menstrul Disorder</li>
+                <li> <i class="fas fa-atom"></i> Menstraul Disorder</li>
                 <li> <i class="fas fa-atom"></i> Pregnancy Prevention</li>
                 <li> <i class="fas fa-atom"></i> Low Sperm Count</li>
                 <li> <i class="fas fa-atom"></i> Watery Sperm</li>
@@ -141,7 +141,7 @@
                 <li> <i class="fas fa-atom"></i> Weight Loss</li>
                 <li> <i class="fas fa-atom"></i> Loss of Memory</li>
                 <li> <i class="fas fa-atom"></i> Sweet Voice</li>
-                <li> <i class="fas fa-atom"></i> Natural Preservative</li>
+                <li> <i class="fas fa-atom"></i> Natural  Cleansing</li>
                 <li> <i class="fas fa-atom"></i> How to stop smoking</li>
                 <li> <i class="fas fa-atom"></i> Cataracts </li>
                 <li> <i class="fas fa-atom"></i> High Blood Pressure</li>
@@ -290,6 +290,8 @@
             <div class="pay">
             <h1>Pay With Paystack</h1>
             <div><a href="onclick="payWithPaystack()"></a><img src="./img/paymentgate.png" alt="Paystack Payment"></div>
+            <script src="https://js.paystack.co/v1/inline.js"></script>
+            <button  onclick="payWithPaystack()"> Pay Now </button>
             </div>
 
         
@@ -297,7 +299,14 @@
             <h1>Pay With PayPal</h1>
             <div><a href="onclick="payWithPaystack()"></a><img src="./img/paypal gateway.png" alt="Paystack Payment"></div>
             </div>
+
+            <div class="pay">
+                <h1>Pay With PayPal</h1>
+                <button onclick="payWithPaystack()"><img src="./img/paymentgate.png" alt=""></button>
+                </div>
         </div>
+
+        
     </section>
 
     <footer class="footer">
@@ -305,7 +314,7 @@
     </footer>
 
 
-    <!-- This section is for the form class that will pop us like a modal... -->
+    <!-- This section is for the form class that will pop us like a modal...
     <div id="simpleModal" class="modal">
         <div class="forming">
         <form action="GET">
@@ -343,20 +352,18 @@
         <p class="terms">By clicking, you have agreed to our <a href="#">Terms & Conditions</a> 
             <br>
             and also our <a href="#Privacy">Policies & Privacy</a> </p>. 
-    <!-- 
+    
         <div class="radio">
         <input type="radio" name="" id="radio"> I Agree.
         <input type="radio" name="" id="radio"> I Do Not Agree
         </div> -->
         
-        <footer class="footer">
+        <!-- <footer class="footer">
             <p>Copyright &copy; D'Fleex 2019. All Rights Reserved. </p>
-        </footer>
+        </footer> -->
     
-        </div>
-        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://js.paystack.co/v1/inline.js"></script>
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>

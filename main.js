@@ -27,7 +27,7 @@ window.addEventListener('scroll', function() {
 
 
 
-function payWithPaystack () {
+function payWithPaystack (){
 var  handler = PaystackPop.setup ({
     key = 'pk_test_77b31b8f3ebf740c3220d053e6dc8a173215d933', 
     email = 'Napoleonjay09@gmail.com',
