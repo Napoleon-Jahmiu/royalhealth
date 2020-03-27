@@ -369,10 +369,28 @@ a {
 }
 
 #payment {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 2rem;
-    
+    padding: 2rem;
+    background: #fff;
+    border-top: solid 1px #93cb52;
+}
+
+.payments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-basis: 1; */
+    /* background: var(--colorfour); */
+}
+
+.payments img {
+    width: 250px;
+    height: 100px;
+    background: var(--colorfour);
+    margin: 0 1rem;
+}
+
+.pay h1 {
+    text-align: center;
 }
 /* .testimonials .test-speech {
     float: right;
@@ -399,7 +417,7 @@ a {
 }
 .footer {
     color: #333;
-    background: #fff;
+    background: var(--colorfour);
     padding: .5rem;
     overflow: auto;
     text-align: center;
