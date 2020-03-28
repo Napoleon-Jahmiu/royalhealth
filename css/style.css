@@ -57,12 +57,13 @@ a {
     letter-spacing: 2rem;
 }
 
-.button{
+.btn{
     display: inline-block ;
-    color: white;
+    /* color: white; */
     border: none;
     background: #93cb52;
     opacity: 0.7;
+    border-radius: 5px;
     padding: .5rem 1rem ;
     margin-top: 1rem;
 }
@@ -78,6 +79,7 @@ a {
     align-items: center;
     color: var(--colortwo);
     font-weight: bold;
+    padding: .5rem;
     align-content: center;
    
     /* display: inline-block ;
@@ -100,6 +102,27 @@ a {
 .liste {
     list-style: none;
 }
+
+.limited {
+    text-align: center;
+    padding: none;
+    color: var(--colortwo);
+}
+
+.amount1 {
+    text-decoration: line-through double var(--colortwo);    
+    background: var(--colorfour);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.amount {
+    background: var(--colorfour);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+
 /* navbar section */
 #navbar {
     background: #93cb52;
@@ -368,10 +391,6 @@ a {
     padding-top: .5rem;
 }
 
-.amount {
-    background: var(--colorfour);
-    padding: .5rem;
-}
 
 #payment {
     padding: 2rem;
