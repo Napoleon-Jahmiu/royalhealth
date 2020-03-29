@@ -301,11 +301,11 @@ a {
 }
 
 .fa-hand-point-right {
-    /* color: #fff; */
+    color: var(--colortwo);
 }
 
 .training-img {
-    background: url('../img/medical.jpg')no-repeat center center/cover;
+    background: url('../img/newmedical.jpg')no-repeat center center/cover;
     padding: 2rem 3rem;
     min-height: 600px;
     margin: 2rem;
@@ -332,7 +332,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-wrap: ;
     padding-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -416,10 +415,23 @@ a {
 .pay h1 {
     text-align: center;
 }
-/* .testimonials .test-speech {
-    float: right;
-    
-} */
+
+.pay img {
+    background: var(--colorfour);
+}
+
+.pay .flutter {
+    /* background: var(--colorfour); */
+    color: var(--colorfour);
+    border: 2px solid var(--colorfour);
+}
+
+.pay button {
+    padding: .5rem 1rem;
+    color: var(--colortwo);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
 /* thank you successful registration page */
 .thanks {
