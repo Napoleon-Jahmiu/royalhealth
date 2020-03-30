@@ -14,12 +14,45 @@
 </head>
 
 <body>
+ <nav>
+        <div id="navbar">
+        <!-- <div class="navbar-content"> -->
+            <div class="logo"> <img src="./img/aloe vera.jpg" alt=""> <h1>STAY+SAFE</h1></div>
+
+            <div class="social">
+                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+            </div>
+            
+            <div class="navv">
+                <ul>
+                <li><a .btn href="index.html#welcome">Welcome</a></li>
+                <li><a .btn href="index.html#learn">Module</a></li>
+                <li><a .btn href="index.html#testimonial">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+    </nav>
     
 <section id="payment">
+    <div class="advert"><img src="./img/advertisement.png" alt=""></div>
+
     <div class="payments container">
+
+        <div class="pay">
+            <h2> <span class="amount"> Pay With PayPal</span></h2>
+    
+            <div><img src="./img/paypal gateway.png" alt="Paystack Payment"></div>
+            <form >
+                <script src="https://js.paystack.co/v1/inline.js"></script>
+                <button type="button" onclick="payWithPaystack()"> Pay Now </button> 
+                </form>
+            
+            </div>
         
         <div class="pay">
-        <h1>Pay With Paystack</h1>
+        <h2> <span class="amount"> Pay With Paystack</span></h2>
 
         <div><img src="./img/paymentgate.png" alt="Paystack Payment"></div>
         <form >
@@ -31,7 +64,7 @@
 
 
         <div class="pay">
-        <h1>Pay With FlutterWave</h1>
+        <h2><span class="amount">Pay with Flutter</span></h2>
         <div class="flutter"><img src="./img/rave.png" alt=""></div>
         <form>
             <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>

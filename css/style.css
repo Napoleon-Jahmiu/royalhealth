@@ -305,7 +305,7 @@ a {
 }
 
 .training-img {
-    background: url('../img/newmedical.jpg')no-repeat center center/cover;
+    background: url('../img/advert.jpg')no-repeat center center/cover;
     padding: 2rem 3rem;
     min-height: 600px;
     margin: 2rem;
@@ -390,11 +390,22 @@ a {
     padding-top: .5rem;
 }
 
+/* THE PAYMENT SECTION */
 
 #payment {
     padding: 2rem;
     background: #fff;
-    border-top: solid 1px #93cb52;
+    /* border-top: solid 1px #93cb52; */
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+
+}
+
+#payment .advert {
+    margin: auto;
+    padding: 2rem;
 }
 
 .payments {
@@ -405,26 +416,21 @@ a {
     /* background: var(--colorfour); */
 }
 
+.pay {
+    margin: 10% auto;
+}
+
 .payments img {
-    width: 250px;
+    width: 200px;
     height: 100px;
     background: var(--colorfour);
-    margin: 0 1rem;
+    margin:  1rem 1rem;
 }
 
 .pay h1 {
     text-align: center;
 }
 
-.pay img {
-    background: var(--colorfour);
-}
-
-.pay .flutter {
-    /* background: var(--colorfour); */
-    color: var(--colorfour);
-    border: 2px solid var(--colorfour);
-}
 
 .pay button {
     padding: .5rem 1rem;
