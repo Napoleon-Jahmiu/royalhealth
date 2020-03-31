@@ -143,26 +143,43 @@
     padding: .6rem .7rem;
 }
  
+#testimonial h2 {
+    padding-bottom: none;
+    margin-bottom: none;
+}
+
+
+
 .testimonial {
     width: 100%;
     display: block;
-    grid-template-columns: auto;
+    /* grid-template-columns: auto; */
 }
 
+.testimonials {
+    border: #fff solid 1px;
+    margin: 1rem 0;
+}
+
+.testimonials:first-child {
+    margin-top: none;
+}
+
+.testimonials img {
+    width: 20px;
+    height: 20px;
+}
 
 .testimonials .test-speech {
     margin-top: -1rem;
 }
 
 
+
 .testimonials .test-speech h3 {
     padding-bottom: -1rem;
     margin-top: 1rem;
     margin-bottom: -1.2rem;
-}
-
-.testimonials img {
-    width: 350px;
 }
 
 /* for  screen sizes less than 500px*/
