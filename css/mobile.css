@@ -143,11 +143,10 @@
     padding: .6rem .7rem;
 }
  
-.testimonials > div {
+.testimonial {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto .5fr auto;
-
+    display: block;
+    grid-template-columns: auto;
 }
 
 
