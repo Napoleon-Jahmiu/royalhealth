@@ -27,8 +27,8 @@
     align-items: center;
     text-align: justify;
     align-content: center;
-    margin: auto;
-    padding: 3rem;
+    margin: 1.2rem auto;
+    padding: 0 1rem;
 }
 
 .testimonials > div {
