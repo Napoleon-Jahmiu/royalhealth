@@ -34,7 +34,6 @@
 #welcome .welcome-book{
     display: grid;
     /* grid-template-columns: 2fr; */
-    margin: auto;
     padding: .8rem;
 }
 
