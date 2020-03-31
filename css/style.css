@@ -277,24 +277,24 @@ a {
     margin-bottom: 1.2rem;
 }
 
-#welcome .welcome-training {
+#welcome .welcome-book {
     display: flex;
     justify-items: center;
     /* margin-bottom: 2rem; */
 }
 
-.welcome-training .training-content {
+.welcome-book .book-content {
     width: 50%;
     padding: 0 2rem;
     text-align: justify;
     align-content: center;
 }
 
-.training-content .button {
+.book-content .button {
     margin-bottom: 1rem;
 }
 
-.welcome-training .thebook {
+.welcome-book .thebook {
     padding: 1rem 0;
     border-top: 1px dashed #fff;
     border-bottom: 1px dashed #fff;

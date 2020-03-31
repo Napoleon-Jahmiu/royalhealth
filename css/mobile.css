@@ -31,6 +31,18 @@
     padding: 0 1rem;
 }
 
+#welcome .welcome-book{
+    display: grid;
+    /* grid-template-columns: 2fr; */
+    margin: auto;
+    padding: .8rem;
+}
+
+#welcome-book .book-content {
+    width: 100%;
+    padding: .6rem 1.1rem;
+}
+
 .testimonials > div {
     width: 100%;
     display: grid;
@@ -38,30 +50,11 @@
 
 }
 
-.testimonias > div {
-    width: 100%;
-    transform: none;
-    display: grid;
-    grid-template-columns: auto .5fr auto;
-}
-
-.testimonials .box {
-    margin-top: 3rem;
-    height: 300px;
-}
-
-.testimonias .box {
-    margin-top: 3rem;
-    height: 300px;
-}
 
 .testimonials .test-speech {
     margin-top: -1rem;
 }
 
-.testimonias .test-speech {
-    margin-top: -1rem;
-}
 
 .testimonials .test-speech h3 {
     padding-bottom: -1rem;
@@ -69,21 +62,9 @@
     margin-bottom: -1.2rem;
 }
 
-.testimonias .test-speech h3 {
-    padding-bottom: -1rem;
-    margin-top: 1rem;
-    margin-bottom: -1.2rem;
-    transform: translateX(160px);
-}
-
 .testimonials img {
     width: 350px;
 }
-
-.testimonias img {
-    width: 350px
-}
-
 
 /* for  screen sizes less than 500px*/
 
