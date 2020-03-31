@@ -12,13 +12,54 @@
 
 /* ........................... */
 
+#navbar {
+    display: flex;
+}
+
 #navbar .logo {
     padding: 1.6rem;
+
 }
 
 #navbar .social .fa-youtube, 
 #navbar .social .fa-instagram{
     display: none;
+}
+
+#navbar .logo img {
+    width: 10px;
+    height: 10px;
+    /* margin right: .2rem; */
+}
+
+#navbar ul {
+    padding: .5rem;
+}
+
+#navbar ul li {
+    padding: 1rem .3rem;
+    font-size: .75rem;
+}
+
+#navbar ul li a {
+    padding: .3rem .5rem;
+    cursor: pointer;
+}
+
+#navbar .logo h1 {
+    font-size: .7rem;
+    letter-spacing: normal;
+}
+
+#showcase {
+    height: 100vh;
+    padding: 1rem;
+}
+
+#showcase::before {
+    top: 100px;
+    left: 0;
+    right: 0;
 }
 
 #showcase .showcase-container {
@@ -69,8 +110,8 @@
 
 @media (max-width: 500px) {
     #navbar {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: rows;
+        justify-content: space-evenly;
 
     }
 
