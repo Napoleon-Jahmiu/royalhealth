@@ -11,7 +11,42 @@
 
 
 /* ........................... */
+/* Utility Section */
+.py-1 {padding: .8rem 0;}
+.py-2 {padding: 1rem 0;}
+.py-3 {padding: 1.4rem 0;}
+.p-1 {padding: .8rem 0;}
+.p-2 {padding: 1rem 0;}
+.p-3 {padding: 1.4rem 0;}
 
+.m-heading {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+#butt {
+    letter-spacing: 1rem;
+}
+
+.btn {
+   padding: .3rem .75rem; 
+   font-size: .8rem;
+}
+
+.btn:hover {
+    font-size: 1rem;
+}
+
+.btn a {
+    padding: .35rem;
+}
+
+.reg {
+    margin-top: .75rem;
+}
+
+
+/* Navbar Section: This section is about the mobile view navbar less than 500px */
 #navbar {
     display: flex;
 }
@@ -30,6 +65,17 @@
     width: 10px;
     height: 10px;
     /* margin right: .2rem; */
+}
+
+
+#navbar .social {
+    display: none;
+    padding: -2rem;
+}
+
+.socials {
+    display: flex;
+    padding: .5rem 0;
 }
 
 #navbar ul {
@@ -56,20 +102,26 @@
     padding: 1rem;
 }
 
-#showcase::before {
-    top: 100px;
-    left: 0;
-    right: 0;
-}
 
 #showcase .showcase-container {
     display: flex;
+    height: inherit;
     justify-content: center;
     align-items: center;
     text-align: justify;
     align-content: center;
-    margin: 1.2rem auto;
+    /* margin: 1.2rem auto; */
     padding: 0 1rem;
+}
+
+#showcase .showcase-content  h1, 
+#showcase .showcase-content h4 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#showcase .showcase-content p {
+    font-size: .8rem;
 }
 
 #welcome .welcome-book{
@@ -78,11 +130,19 @@
     padding: .8rem;
 }
 
-#welcome-book .book-content {
-    width: 100%;
-    padding: .6rem 1.1rem;
+.book-img {
+    width: 90%;
+    min-height: 400px;
+    padding: 1rem 1.2rem;
+    /* margin-top: 1rem; */
 }
 
+
+.welcome-book .book-content {
+    width: 100%;
+    padding: .6rem .7rem;
+}
+ 
 .testimonials > div {
     width: 100%;
     display: grid;
@@ -108,7 +168,7 @@
 
 /* for  screen sizes less than 500px*/
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     #navbar {
         flex-direction: rows;
         justify-content: space-evenly;
@@ -127,15 +187,11 @@
     .socials {
         display: flex;
     }
-    
-    /* #navbar ul{
-        padding: -1rem;
-    } */
 
 
-    /* Showcase Section */
+    Showcase Section
     #showcase {
-        height: 70vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -147,7 +203,7 @@
         font-size: 1.3rem;
     }
 
-    /* The welcome section */
+    The welcome section
     #welcome {
         height: 100%;
     }
@@ -171,7 +227,7 @@
         width: 100%;
     }
 
-    /* What You will learn section */
+    What You will learn section
     #learn h1 {
         font-size: 1.1rem;
     }
@@ -183,7 +239,7 @@
         font-size: .8rem;
     }
 
-    /* The Testimonial Section */
+    The Testimonial Section
     #testimonial {
         padding: 1.3rem;
     }
@@ -271,5 +327,5 @@
     .footer {
         font-size: .9rem;
     }
-}
+} */
 

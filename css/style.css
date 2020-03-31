@@ -54,6 +54,7 @@ a {
 }
 #butt {
     display: block;
+    text-align: center;   
     letter-spacing: 2rem;
 }
 
@@ -70,7 +71,7 @@ a {
 
 .btn:hover {
     transition: 1s ease-in;
-    opacity: 0.9;
+    opacity: 0.7;
     font-size: 1.2rem;
 }
 
@@ -287,7 +288,7 @@ a {
     padding: 0 2rem;
     text-align: justify;
     align-content: center;
-} w
+} 
 
 .book-content .button {
     margin-bottom: 1rem;
@@ -299,16 +300,13 @@ a {
     border-bottom: 1px dashed #fff;
 }
 
-.fa-hand-point-right {
-    color: var(--colortwo);
-}
 
-.training-img {
+.book-img {
     background: url('../img/advert.jpg')no-repeat center center/cover;
     padding: 2rem 3rem;
     min-height: 600px;
-    margin: 2rem;
-    width: 400px;
+    margin: 2rem .75rem;
+    width: 500px;
 }
 
 
@@ -345,6 +343,11 @@ a {
 
 #learn .item {
     margin-bottom: 1rem;
+}
+
+#advocate {
+    margin: 1rem;
+    text-align: center;
 }
 
 #advocate ul {
