@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<hea
-d>
-
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>REGISTER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px) " href="css/mobile.css">
+    <link rel="stylesheet" href="font/css/all.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link rel="stylesheet" href="font/css/fontawesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>RH Payment</title>
+</head>
 
-<style>
+<body>
+ <nav>
+        <div id="navbar">
+        <!-- <div class="navbar-content"> -->
+            <div class="logo"> <img src="./img/aloe vera.jpg" alt=""> <h1>STAY+SAFE</h1></div>
+
+            <div class="social">
+                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+            </div>
+            
+            <div class="navv">
+                <ul>
+                <li><a .btn href="index.html#welcome">Welcome</a></li>
+                <li><a .btn href="index.html#learn">Module</a></li>
+                <li><a .btn href="index.html#testimonial">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+    </nav>
+
+<!-- <style>
 
 * {
     margin: 0;
@@ -21,6 +47,7 @@ body, html {
     background: #ccc;
     line-height: 1.7;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 .form-wrap {
@@ -82,18 +109,19 @@ body, html {
     color: #333;
     background: #fff;
     padding: .5rem;
-    overflow: hidden;
+    overflow: auto;
     text-align: center;
 }
-</style>
+</style> -->
 
 </head>
 
 
 <body>
+    <div class="formy">
     <form action="GET">
         <div class="form-wrap">
-            <h2>Register For This Class</h2>
+            <h2>GET THE BOOK</h2>
             <div class="form-group">
                 <label class="is-requierd" for="Name">Full Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter Your Full Name">
@@ -109,28 +137,16 @@ body, html {
                 <input type="number" name="number" id="number" placeholder="Enter Your Phone Number">
             </div>
 
-            <div class="form-group">
-                <label class="is-required" for="Name">Profession</label>
-                <input type="text" name="name" id="name" placeholder="Enter Your Profession">
-            </div>
-
-            <div class="form-group">
-                <label for="message">What is your End Goal?</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave Message"></textarea>
-            </div>
-            <button class="send"> SUBMIT</button>
+            <button class="send"  > <a href="success.html">Submit</a></button>
         </div>
     </form>
 
-    <p class="terms">By clicking, you have agreed to our <a href="#">Terms & COnditions</a> 
+    <!-- <p class="terms">By clicking, you have agreed to our <a href="#">Terms & Conditions</a> 
         <br>
         and also our <a href="#Privacy">Policies & Privacy</a> </p>. 
-
-    <div class="radio">
-    <input type="radio" name="" id="radio"> I Agree.
-    <input type="radio" name="" id="radio"> I Do Not Agree
-    </div>
     
+    </div> -->
+
     <footer class="footer">
         <p>Copyright &copy; D'Fleex 2019. All Rights Reserved. </p>
     </footer>

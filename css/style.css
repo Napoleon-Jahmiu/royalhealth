@@ -474,7 +474,7 @@ a {
 
 
 /* styles for form: This style is for form to pop us as a modal */
-button {
+/* button {
     text-decoration: none;
     color: #333;
 }
@@ -495,10 +495,10 @@ button {
     float: right;
     color: rgba(231, 76, 60, 0.5);
     font-size: 1.3rem;
-    /* background-color: #ccc; */
+    background-color: #ccc;
     background-size: 100%;
-    /* padding:  0.1rem; */
-    /* transform: skewX(150deg); */
+    padding:  0.1rem;
+    transform: skewX(150deg);
     cursor: pointer;
 }
 
@@ -513,12 +513,17 @@ button {
 @keyframes close {
     from { scale: .2;}
     to { scale : .5;}
+} */
+
+.formy {
+    background: #fff;
 }
 
 .forming {
     background: rgba(231, 76, 60, 0.5);
     width: 40%;
     margin: auto;
+    /* background: #fff; */
     /* opacity: 0.5; */
     padding-top: 2rem;
 }
@@ -532,7 +537,8 @@ button {
     margin-top: 2rem;
     margin-bottom: 1rem;
     border-radius: 15px;
-    box-shadow:0 3px 2px 0 rgba(231, 76, 60, 0.5), 3px 0 3px 0 rgba(231, 76, 60, 0.5);
+    border: 2px solid #93cb52;
+    /* box-shadow:0 3px 2px 0 rgba(231, 76, 60, 0.5), 3px 0 3px 0 rgba(231, 76, 60, 0.5); */
 }
 
 .form-wrap h2 {
@@ -548,7 +554,7 @@ button {
     width: 100%;
     border: 1px solid ;
     border-radius: 5px;
-    outline-color: palevioletred;
+    outline-color: var(--colortwo);
     margin-bottom: 1.3rem;
 }
 
