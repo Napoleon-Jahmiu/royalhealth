@@ -38,15 +38,15 @@
 <section id="payment">
     <div class="advert"><img src="./img/advertisement.png" alt=""></div>
 
-    <div class="payments container">
+    <div class="payments">
 
-        <div class="pay">
+        <!-- <div class="pay">
             <h2> <span class="amount"> Pay With PayPal</span></h2>
     
             <div><img src="./img/paypal gateway.png" alt="Paystack Payment"></div>
             <div id="paypal-button"></div>
             <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-            </div>
+            </div> -->
         
         <div class="pay">
         <h2> <span class="amount"> Pay With Paystack</span></h2>
@@ -54,14 +54,15 @@
         <div><img src="./img/paymentgate.png" alt="Paystack Payment"></div>
         <form >
             <script src="https://js.paystack.co/v1/inline.js"></script>
-            <button type="button" onclick="payWithPaystack()"> Pay Now </button> 
+            <button type="button" onclick="payWithPaystack()">Pay Now</button> 
             </form>
         </div>
 
 
         <div class="pay">
         <h2><span class="amount">Pay with Flutter</span></h2>
-        <div class="flutter"><img src="./img/rave.png" alt=""></div>
+
+        <div><img src="./img/rave.png" alt=""></div>
         <form>
             <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
             <button type="button" onClick="payWithRave()">Pay Now</button>

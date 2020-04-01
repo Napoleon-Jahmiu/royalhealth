@@ -406,12 +406,14 @@ a {
 }
 
 #payment .advert {
-    margin: auto;
+    /* margin: auto; */
     padding: 2rem;
+    width: 50%;
 }
 
 .payments {
-    display: flex;
+    display: block;
+    margin: auto;
     align-items: center;
     justify-content: center;
     /* flex-basis: 1; */
@@ -419,7 +421,8 @@ a {
 }
 
 .pay {
-    margin: 10% auto;
+    margin-bottom: 2rem;
+    border: 1px solid var(--colortwo);
 }
 
 .payments img {
