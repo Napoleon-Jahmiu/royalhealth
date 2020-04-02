@@ -39,22 +39,14 @@
     <div class="advert"><img src="./img/advertisement.png" alt=""></div>
 
     <div class="payments">
-
-        <!-- <div class="pay">
-            <h2> <span class="amount"> Pay With PayPal</span></h2>
-    
-            <div><img src="./img/paypal gateway.png" alt="Paystack Payment"></div>
-            <div id="paypal-button"></div>
-            <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-            </div> -->
         
         <div class="pay">
         <h2> <span class="amount"> Pay With Paystack</span></h2>
 
         <div><img src="./img/paymentgate.png" alt="Paystack Payment"></div>
-        <form>
+        <form >
           <script src="https://js.paystack.co/v1/inline.js"></script>
-          <button type="button" onclick="payWithPaystack()">Pay Now</button> 
+          <button type="button" onclick="payWithPaystack()"> Pay Now</button> 
         </form>
         </div>
 
@@ -62,7 +54,7 @@
         <div class="pay">
         <h2><span class="amount">Pay with Flutter</span></h2>
 
-        <div><img src="./img/rave.png" alt=""></div>
+        <div><img src="./img/rave.png" alt="Flutter Payment"></div>
         <form>
             <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
             <button type="button" onClick="payWithRave()">Pay Now</button>
@@ -83,9 +75,10 @@
 <script>
   function payWithPaystack(){
     var handler = PaystackPop.setup({
-      key: 'pk_test_4600eb36c483bbfe38a72592af1fb0179a72b2ae',
-      email: 'royalfleex@gmail.com',
-      amount: 200000,
+      key: 'pk_live_c21645921fe5871fbdbff81b279ecf2a24af4956',
+      email: 'customer@email.com',
+      amount: 10000,
+      currency: "NGN",
       ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
       metadata: {
          custom_fields: [
@@ -189,3 +182,7 @@
 </script>
     
 </body> -->
+
+<script src="main.js"></script>
+</body>
+</html>
