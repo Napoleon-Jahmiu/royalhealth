@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
 }
 
 /* This creates the first line of the hamburger */
@@ -79,4 +79,56 @@
 /* Rotate on Hover when Checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(360deg);
+}
+
+/* styling the menu section to show the navbar by the side */
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    /* visibility: hidden; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div {
+    background: var(--colorfour);
+    width: 20vw;
+    height: 30vw;
+    display: flex;
+    padding: 1rem;
+    margin-top: 15rem;
+    align-items: left;
+    justify-content: left;
+    /* transform: scale(0); */
+    transition: all 0.3s ease;
+}
+
+.menu-wrap .menu > div > div {
+    /* text-align: center; */
+    max-width: 18vw;
+    max-height: 25vw;
+    /* opacity: 0; */
+    transition: opacity 0.4s ease-in-out;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    /* color: #fff; */
+    font-size: 1.3rem;
+    padding: 0.8rem;
+}
+
+.menu-wrap .menu > div > div > ul > li a {
+    background: var(--colortwo);
+    /* background: var(--colortwo); */
+    color: #fff;
+    padding: 0.5rem .7rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
 }
