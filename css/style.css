@@ -135,14 +135,14 @@ a {
     top: 0;
     left: 0;
     opacity: 0.7; 
-    z-index: 2; 
+    z-index: 1; 
 }
 
 #navbar .logo {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 4rem;
     letter-spacing: .2rem;
     color: var(--colortwo);
 }
