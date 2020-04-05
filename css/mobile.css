@@ -9,6 +9,11 @@
     }
 }
 
+@media (min-width: 768px) and (max-width:1100px) {
+        .menu-wrap .menu {
+            display: none;
+        }
+}
 
 /* ........................... */
 /* Utility Section */
@@ -207,8 +212,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 70vw;
-    height: 70vw;
+    width: 50vw;
+    height: 50vw;
     /* margin-top: -15rem; */
     padding: -1rem;
     /* flex: none; */
