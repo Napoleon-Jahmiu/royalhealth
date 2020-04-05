@@ -4,6 +4,7 @@
     left: 0;
     top: 0;
     z-index: 1;
+    margin-top: 1.5rem;
 }
 
 /* This section is the toggler section which is checked when clicked */
@@ -27,7 +28,7 @@
     width: 50px;
     height: 50px;
     padding: 1rem;
-    background: var(--colortwo);
+    background: var(--colorfour);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,6 +82,22 @@
     transform: rotate(360deg);
 }
 
+/* Show overlay when checked */
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div{
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    /* transition: opacity 0.4s ease 0.4; */
+}
+
+
 /* styling the menu section to show the navbar by the side */
 .menu-wrap .menu {
     position: fixed;
@@ -88,38 +105,40 @@
     left: 0;
     width: 200px;
     height: 300px;
-    /* visibility: hidden; */
+    visibility: hidden;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .menu-wrap .menu > div {
     background: var(--colorfour);
     width: 20vw;
     height: 30vw;
     display: flex;
+    /* flex: none; */
     padding: 1rem;
     margin-top: 15rem;
     align-items: left;
     justify-content: left;
-    /* transform: scale(0); */
+    transform: scale(0);
     transition: all 0.3s ease;
 }
 
 .menu-wrap .menu > div > div {
     /* text-align: center; */
     max-width: 18vw;
-    max-height: vw;
-    /* opacity: 0; */
+    max-height: 25vw;
+    opacity: 0;
     transition: opacity 0.4s ease-in-out;
 }
 
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     /* color: #fff; */
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.8rem;
 }
 
