@@ -559,8 +559,8 @@ a {
     margin-bottom: 1.3rem;
 }
 
-.is-required:after{
-    content: '*';
+.required:after{
+    content: '*' important!;
     padding-left: .3rem;
     color: red;
 }
