@@ -5,114 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px) " href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px) " href="css/mobile.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="font/css/all.css">
     <link rel="stylesheet" href="font/css/all.min.css">
     <link rel="stylesheet" href="font/css/fontawesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>RH Payment</title>
+    <title>Royal-Health</title>
 </head>
-
 <body>
- <nav>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#learn">The-Book</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <nav>
         <div id="navbar">
         <!-- <div class="navbar-content"> -->
-            <div class="logo"> <img src="./img/aloe vera.jpg" alt=""> <h1>STAY+SAFE</h1></div>
+            <div class="logo"> <img src="./img/aloe vera.jpg" alt=""> <h1>RoyalHealth</h1></div>
 
             <div class="social">
-                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
-                <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="https://wa.me/2347087665232?text=Hello%20Natural%20Health%20I%20am%20interested%20in%20your%20ebook.%20My%20Name%20is%20__%20"><i class="fab fa-whatsapp fa-2x"></i></a>
             </div>
             
             <div class="navv">
                 <ul>
-                <li><a .btn href="index.html#welcome">Welcome</a></li>
-                <li><a .btn href="index.html#learn">Module</a></li>
-                <li><a .btn href="index.html#testimonial">Connect</a></li>
+                <li><a .btn href="#welcome">Welcome</a></li>
+                <li><a .btn href="#learn">The-Book</a></li>
+                <li><a .btn href="#testimonial">Testimonial</a></li>
                 </ul>
             </div>
         </div>
-        <!-- </div> -->
     </nav>
-
-<!-- <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    background: #ccc;
-    line-height: 1.7;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-}
-
-.form-wrap {
-    width: 400px;
-    background: white;
-    margin: auto;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-}
-
-.form-wrap h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.form-group label{
-    margin-top: .5rem;
-}
-
-.form-group input {
-    padding: 8px;
-    width: 100%;
-    border: 1px solid ;
-    border-radius: 5px;
-    outline-color: palevioletred;
-    margin-bottom: 1.3rem;
-}
-
-.is-required:after{
-    content: '*';
-    padding-left: .3rem;
-    color: red;
-}
-
-.send {
-    padding: .5rem .3rem;
-    border-radius: 4px;
-    border: none;
-}
-
-.send:hover {
-    font-size: 1rem;
-    background: rgba(41, 128, 185, 0.5)
-}
-
-.terms {
-    text-align: center;
-}
-
-.radio {
-    align-items: center;
-    margin: auto;
-    /* transform: translateX(100px); */
-    margin-bottom: 2rem;
-}
-
-.footer {
-    color: #333;
-    background: #fff;
-    padding: .5rem;
-    overflow: auto;
-    text-align: center;
-}
-</style> -->
 
 </head>
 
@@ -121,7 +57,7 @@ body, html {
     <div class="formy">
     <form name="contact" method="POST" data-netlify="true">
         <div class="form-wrap">
-            <h2>GET THE BOOK</h2>
+            <h2>THANKS FOR YOUR PURCHASE. GET THE BOOK</h2>
             <div class="form-group">
                 <label class="is-requierd" for="Name">Full Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter Your Full Name">
@@ -140,12 +76,6 @@ body, html {
             <button class="send"  > <a href="success.html">Submit</a></button>
         </div>
     </form>
-
-    <!-- <p class="terms">By clicking, you have agreed to our <a href="#">Terms & Conditions</a> 
-        <br>
-        and also our <a href="#Privacy">Policies & Privacy</a> </p>. 
-    
-    </div> -->
 
     <footer class="footer">
         <p>Copyright &copy; D'Fleex 2019. All Rights Reserved. </p>
