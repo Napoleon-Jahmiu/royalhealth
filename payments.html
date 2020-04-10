@@ -41,17 +41,37 @@
     <div class="payments">
 
         <div class="pay">
-        <h3><span class="amount">Pay with Flutter</span></h3>
+        <h3><span class="amount"><a href="https://flutterwave.com/pay/naturalhealth">Pay With Flutter</a></span></h3>
 
         <div><img src="./img/rave.png" alt="Flutter Payment"></div>
-        <form>
-            <!-- <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script> -->
-            <button type="button" onClick="payWithRave()">Pay Now</button>
-        </form>
-        </div>    
-        
-        
     </div>
+        
+        <div class="pay">
+            <h3><span class="amount"><a href="https://paystack.com/pay/Naturalhealth-Payment">Pay with Paystack </a></span></h3>
+    
+            <div><img src="./img/paymentgate.png" alt="Paystack Payment"></div>
+
+            <form >
+                <script src="https://js.paystack.co/v1/inline.js"></script>
+                <button type="button" onclick="payWithPaystack()"> Pay Now </button> 
+            </form>
+        </div> 
+        
+        
+    
+    <!-- <form>
+        <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/https://flutterwave.com/pay/naturalhealth-inline.js"></script>
+        <button type="button" onClick="payWithRave()">Pay Now</button>
+    </form>
+
+
+
+    <form >
+        <script src="https://js.paystack.co/v1/inline.js"></script>
+        <button type="button" onclick="payWithPaystack()"> Pay </button> 
+    </form> -->
+       
+    </div>   
 
 </section>
 
@@ -91,7 +111,33 @@
     }
 </script>
 
-
+<script>
+    function payWithPaystack(){
+      var handler = PaystackPop.setup({
+        key: 'pk_live_c21645921fe5871fbdbff81b279ecf2a24af4956',
+        email: 'teamnaturalhealth@gmail.com',
+        amount: 1000,
+        currency: "NGN",
+        // ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+        metadata: {
+           custom_fields: [
+              {
+                  display_name: "Mobile Number",
+                  variable_name: "mobile_number",
+                  value: "+2348012345678"
+              }
+           ]
+        },
+        callback: function(response){
+            alert('success. transaction ref is ' + response.reference);
+        },
+        onClose: function(){
+            alert('window closed');
+        }
+      });
+      handler.openIframe();
+    }
+  </script>
 
 <footer class="footer">
     <p>Copyright &copy; Royal-Health 2019. All Rights Reserved.</p>
