@@ -53,30 +53,33 @@
 </head>
 
 
-<body>
+<div>
     <div class="formy">
     <form name="contact" method="POST" data-netlify="true" action="/success.html">
         <div class="form-wrap">
             <h3>THANKS FOR YOUR PURCHASE. <br>
                 GET THE BOOK</h3>
+
             <div class="form-group">
                 <label class="is-required" for="Name">Full Name</label>
-                <input required type="text" name="name" id="name" placeholder="Enter Your Full Name" required />
+                <input type="text" name="name" id="name" placeholder="Enter Your Full Name" class="required">
             </div>
 
             <div class="form-group">
                 <label class="is-required" for="Name">Email</label>
-                <input required type="email" name="email" id="email" placeholder="Enter Your E-mail" required/>
+                <input type="email" name="email" id="email" placeholder="Enter Your E-mail" class="required">
             </div>
 
             <div class="form-group">
                 <label class="is-required" for="Name">Phone Number</label>
-                <input required type="phone" name="number" id="number" placeholder="Enter Your Phone Number" required/>
+                <input type="phone" name="number" id="number" placeholder="Enter Your Phone Number" class="required">
             </div>
 
-            <button class="send"  > <a href="success.html">Submit</a></button>
-        </div>
+            <button class="send"> <a href="success.html">Submit</a></button>
+       
     </form>
+</div>
+</div>
 
     <footer class="footer">
         <p>Copyright &copy; D'Fleex 2019. All Rights Reserved. </p>
