@@ -1,3 +1,35 @@
+// get modal button
+var modalButton = document.querySelector('#modalbtn');
+// get modal Element
+var modalElement = document.getElementById('modal');
+// close modal Element
+var closeModal = document.getElementById('closebtn');
+
+// add Event listener to openModal
+modalButton.addEventListener('click', openModal);
+
+// add Event Listener to close Modal
+closeModal.addEventListener('click', closeThisModal);
+
+// add event listener to close modal outside the modal
+window.addEventListener('click', clickOutside);
+
+// function for close Modal Element
+function closeThisModal() {
+    modalElement.style.display = 'none';
+}
+
+// Function for open modal Element
+function openModal() {
+ modalElement.style.display = 'block';
+}
+
+function clickOutside(e) {
+    if(e.target == modalElement) {
+   modalElement.style.display = 'none';
+    }
+}
+
 function payWithPaystack() {
 
     var handler = PaystackPop.setup({ 
